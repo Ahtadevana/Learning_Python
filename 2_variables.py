@@ -14,9 +14,18 @@ gpa = 3.41
 print(f"IPKmu: {gpa}")
 
 #boolean
-is_online = True
+is_student = False
+is_online =  False
 
-if is_online:
-    print(f"{name} online!")
+if is_student:
+    if is_online:
+        print("In education, currently Online!")
+    else:
+        print("In education, currently Offline!")
+elif not is_student:
+    if is_online:
+        print("Not in education, currently Online!")
+    else:
+        print("Not in education")
 else:
-    print(f"{name} offile!")
+    print("Invalid, denied entry!")
