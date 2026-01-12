@@ -1,5 +1,6 @@
 #accepting user input(Project ex. Madlibs, volume calculator,shopping cart)
 
+#using def something() to make/define a new function yourself
 def madlibs_game():
     mood = input("How are you feeling right now?: ")
     place = input("Where are you right now?: ")
@@ -10,8 +11,8 @@ def madlibs_game():
 
 def cube_volume():
     edge = float(input("What's the length of the cube's (any) edge?: "))
-    total = pow(edge, 3)
-    print(f"The volume of your cube would be: {total:.0f}cm^3")
+    total = pow(edge, 3)    #power() function makes the edge variable cubed
+    print(f"The volume of your cube would be: {total:.0f}cm^3") #:.0f will not show a decimal portion
 
 def shopping_cart():
     item = input("What do you want to buy right now?: ")

@@ -4,6 +4,7 @@ name = input("What is your name?: ")
 age = int(input("What is your age?: "))
 is_online = True
 
+#making mini def functions to check user's input
 def name_check(name):
     if name == "":
         print("You didn't input your name!")

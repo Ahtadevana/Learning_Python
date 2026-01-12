@@ -16,6 +16,6 @@ if name == False:
     print("You didn't input your name!")
 else:
     print("Acces granted: ")
-    print(type(age))
+    print(type(age))    #type() function used to show what type of var it is
     print(type(gpa))    
     print(type(name))

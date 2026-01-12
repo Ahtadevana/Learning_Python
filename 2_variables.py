@@ -3,7 +3,7 @@
 #string
 name = "Xervii"
 password = "Hellyeah123"
-print(f"namamu {name}, password: {password}")
+print(f"namamu {name}, password: {password}") #Putting an f string to display the var's value
 
 #integer
 age = 18
@@ -17,6 +17,7 @@ print(f"IPKmu: {gpa}")
 is_student = False
 is_online =  False
 
+# if statement for testing the variable capabilities
 if is_student:
     if is_online:
         print("In education, currently Online!")

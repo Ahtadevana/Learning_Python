@@ -1,4 +1,5 @@
-#Logical operators (and, or, not)
+#   Making a ternary operator!
+#   x if condition else y
 
 name = input("What is your name?: ")
 age = int(input("What is your age?: "))
