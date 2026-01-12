@@ -1,19 +1,18 @@
 #Making a weight converter program in Python
-unit = input("What standard unit of mass do you use(Kg/Lbs)?: ").lower()
-weight = float(input(f"What's your current weight?({unit}): "))
+unit = input("What's the unit of mass you use(Kg/Lbs): ").lower()
+weight = float(input(f"What's your weight ({unit})?: "))
 
-def convert_weight(weight, unit):
-    if unit == "lbs":
-        total = weight * 0.453592
-        unit = "Kg"
+def convert_weight(weight, factor):
+    return weight * factor
 
-    elif unit == "kg":
-        total = weight * 2.20462
-        unit = "Lbs"
+if unit == "kg":
+    result = convert_weight(weight, 2.20462)
+    unit = "Lbs"
+elif unit == "lbs":
+    result = convert_weight(weight, 0.453592)
+    unit = "Kg"
+else:
+    print(f"{unit} is INVALID! Unit of mass must be Kg/Lbs!")
+    exit() #instantly ending the code
 
-    else:
-        print("{unit} is invalid! Unit of mass must be (Kg/Lbs)")
-    return total, unit
-
-result, unit = convert_weight(weight, unit)
-print(f"Converted successfully! Your result is: {result} {unit}")
+print(f"Converted successfully! Your result would be {result:.1f} {unit}")
