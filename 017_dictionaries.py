@@ -22,19 +22,19 @@ data_values = databank.values() #display only values
 print(data_values)
 print(spaces)
 
-databank.update({"feline":"lion"})  #rewriting/updating a certain key value within a dict
+databank.update({"feline":"lion"})  #rewriting/updating a certain key value within the dict
 print(databank)
 print(spaces)
 
-databank.pop("poultry") #removes a certain key value within a dict
+databank.pop("poultry") #removes a certain key value within the dict
 print(databank)
 print(spaces)
 
-databank.popitem()  #removes the latest key value added into the dict
+databank.popitem()  #removes the last inserted key-value pair inside the dict
 print(databank)
 print(spaces)
 
-databank.clear()    #entirely remove a dict to an empty one
+databank.clear()    #empties the dict
 print(databank)
 print(spaces)
 
